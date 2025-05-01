@@ -1,73 +1,202 @@
- /* Основные настройки страницы */
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f4f4f9;
-            font-family: Arial, sans-serif;
-            color: #333;
-			opacity: 0;
-    		animation: fadeIn 1s ease-in forwards;
-			background: linear-gradient(135deg, #f4f4f9, #e8e1ff, #cfc0ff);
-        }
+/* Основные настройки страницы */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    background: linear-gradient(135deg, #f4f4f9, #e8e1ff, #cfc0ff);
+}
 
-		@keyframes fadeIn {
-			from { opacity: 0; }
-			to { opacity: 1; }
-		}
-        /* Контейнер для кнопок */
-        .container {
-            text-align: center;
-        }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
+/* Контейнер для кнопок */
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 30px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
-		.divider {
-			width: 50%;
-			height: 1px;
-			background-color: #ccc;
-			border: none;
-			margin: 20px auto;
-			opacity: 0.5;
-		}
+.divider {
+    width: 50%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 20px auto;
+    opacity: 0.5;
+}
 
-        /* Приветственное сообщение */
-        .welcome {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #6a3ea1;
-        }
+/* Приветственное сообщение */
+.welcome {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #6a3ea1;
+    font-weight: bold;
+}
 
-        /* Стиль для кнопок */
-        .language-button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #5e2e90;
-            text-decoration: none;
-            border-radius: 5px;
-			transition: background-color 0.3s ease, transform 0.2s ease;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #444;
+}
 
-        /* Эффект при наведении */
-        .language-button:hover {
-            transform: scale(1.25);
-        }
-		
-		.language-button:active {
-			transform: scale(0.98);
-		}
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
 
-		@media (max-width: 600px) {
-			.welcome {
-				font-size: 20px;
-			}
-			.language-button {
-				padding: 12px 24px;
-				font-size: 16px;
-			}
-		}
+/* Стиль для кнопок */
+.language-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    background-color: #5e2e90;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    font-weight: 500;
+}
+
+.icon {
+    margin-right: 8px;
+    display: inline-flex;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 8px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Эффект при наведении */
+.language-button:hover {
+    transform: scale(1.05);
+    background-color: #7d4fd1;
+    box-shadow: 0 0 15px rgba(93, 48, 150, 0.4);
+}
+
+.language-button:active {
+    transform: scale(0.98);
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px 15px;
+    }
+    
+    .welcome {
+        font-size: 26px;
+    }
+    
+    .subtitle {
+        font-size: 19px;
+    }
+    
+    .buttons-container {
+        gap: 20px;
+    }
+    
+    .language-button {
+        width: 85%;
+    }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    .welcome {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    .buttons-container {
+        gap: 18px;
+    }
+    
+    .language-button {
+        padding: 14px 25px;
+        font-size: 17px;
+        width: 90%;
+    }
+    
+    .description {
+        font-size: 14px;
+        max-width: 90%;
+        margin-top: 6px;
+    }
+    
+    .divider {
+        margin: 15px auto;
+    }
+}
+
+/* Адаптивность для очень маленьких экранов */
+@media (max-width: 400px) {
+    .container {
+        padding: 15px 10px;
+    }
+    
+    .welcome {
+        font-size: 22px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .buttons-container {
+        gap: 15px;
+    }
+    
+    .language-button {
+        padding: 12px 15px;
+        font-size: 16px;
+        width: 95%;
+    }
+    
+    .icon {
+        margin-right: 6px;
+    }
+    
+    .description {
+        font-size: 13px;
+        max-width: 95%;
+        margin-top: 5px;
+    }
+    
+    .divider {
+        width: 70%;
+        margin: 12px auto;
+    }
+}
