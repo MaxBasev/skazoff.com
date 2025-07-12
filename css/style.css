@@ -1,12 +1,11 @@
-/* Основные настройки страницы */
+/* Base styles */
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: #333;
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
@@ -18,36 +17,13 @@ body {
     to { opacity: 1; }
 }
 
-/* Контейнер для кнопок */
+/* Layout containers */
 .container {
     text-align: center;
     max-width: 600px;
     padding: 30px 20px;
     width: 100%;
     box-sizing: border-box;
-}
-
-.divider {
-    width: 50%;
-    height: 1px;
-    background-color: #ccc;
-    border: none;
-    margin: 20px auto;
-    opacity: 0.5;
-}
-
-/* Приветственное сообщение */
-.welcome {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #6a3ea1;
-    font-weight: bold;
-}
-
-.subtitle {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: #444;
 }
 
 .buttons-container {
@@ -57,27 +33,24 @@ body {
     width: 100%;
 }
 
-/* Стиль для кнопок */
-.language-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-    margin: 0 auto;
-    font-size: 18px;
-    color: #fff;
-    background-color: #5e2e90;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    font-weight: 500;
+.portfolio-section {
+    margin-top: 40px;
 }
 
-.icon {
-    margin-right: 8px;
-    display: inline-flex;
+/* Typography */
+.welcome {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #6a3ea1;
+    font-weight: bold;
+}
+
+.subtitle,
+.portfolio-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #444;
+    font-weight: 500;
 }
 
 .description {
@@ -90,18 +63,65 @@ body {
     text-align: center;
 }
 
-/* Эффект при наведении */
+/* Dividers */
+.divider {
+    width: 50%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 20px auto;
+    opacity: 0.5;
+}
+
+/* Button base styles */
+.button-base {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.language-button {
+    background-color: #5e2e90;
+}
+
+.portfolio-button {
+    background-color: #2d5a87;
+}
+
+.icon {
+    margin-right: 8px;
+    display: inline-flex;
+}
+
+/* Button hover effects */
 .language-button:hover {
     transform: scale(1.05);
     background-color: #7d4fd1;
     box-shadow: 0 0 15px rgba(93, 48, 150, 0.4);
 }
 
-.language-button:active {
+.portfolio-button:hover {
+    transform: scale(1.05);
+    background-color: #4a7ba7;
+    box-shadow: 0 0 15px rgba(45, 90, 135, 0.4);
+}
+
+.button-base:active {
     transform: scale(0.98);
 }
 
-/* Адаптивность для планшетов */
+/* Responsive design */
 @media (max-width: 768px) {
     .container {
         padding: 25px 15px;
@@ -111,7 +131,7 @@ body {
         font-size: 26px;
     }
     
-    .subtitle {
+    .subtitle, .portfolio-title {
         font-size: 19px;
     }
     
@@ -119,12 +139,15 @@ body {
         gap: 20px;
     }
     
-    .language-button {
+    .button-base {
         width: 85%;
+    }
+    
+    .portfolio-section {
+        margin-top: 35px;
     }
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 600px) {
     .container {
         padding: 20px 15px;
@@ -134,7 +157,7 @@ body {
         font-size: 24px;
     }
     
-    .subtitle {
+    .subtitle, .portfolio-title {
         font-size: 18px;
         margin-bottom: 12px;
     }
@@ -143,10 +166,10 @@ body {
         gap: 18px;
     }
     
-    .language-button {
-        padding: 14px 25px;
+    .button-base {
+        padding: 14px 20px;
         font-size: 17px;
-        width: 90%;
+        width: 85%;
     }
     
     .description {
@@ -158,9 +181,12 @@ body {
     .divider {
         margin: 15px auto;
     }
+    
+    .portfolio-section {
+        margin-top: 30px;
+    }
 }
 
-/* Адаптивность для очень маленьких экранов */
 @media (max-width: 400px) {
     .container {
         padding: 15px 10px;
@@ -170,7 +196,7 @@ body {
         font-size: 22px;
     }
     
-    .subtitle {
+    .subtitle, .portfolio-title {
         font-size: 16px;
         margin-bottom: 10px;
     }
@@ -179,10 +205,10 @@ body {
         gap: 15px;
     }
     
-    .language-button {
-        padding: 12px 15px;
+    .button-base {
+        padding: 12px 12px;
         font-size: 16px;
-        width: 95%;
+        width: 90%;
     }
     
     .icon {
@@ -198,5 +224,9 @@ body {
     .divider {
         width: 70%;
         margin: 12px auto;
+    }
+    
+    .portfolio-section {
+        margin-top: 25px;
     }
 }
