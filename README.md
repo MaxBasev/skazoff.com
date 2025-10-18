@@ -2,10 +2,10 @@
 # Basev - Portfolio & Blog Landing Page
 
 ## English
-This is a landing page for Max Basev that serves as a navigation hub to:
-- 👨‍💻 **Resume**: [maxbasev.com](https://maxbasev.com) - Professional experience and skills
-- 🚀 **Lab**: [lab.maxbasev.com](https://lab.maxbasev.com) - Project showcase and experiments
-- 📝 **Basev // Notes**: [en.skazoff.com](https://en.skazoff.com) - SaaS, indie projects, and freelance adventures. Random thoughts on movies, anime, books, philosophy, and everything in between
+Landing page for Max Basev — indie developer writing in public. Navigation hub to:
+- 👨‍💻 **Hire / Resume**: [maxbasev.com](https://maxbasev.com) - Experience, skills, and how I work with clients
+- 🚀 **Lab / Projects**: [lab.maxbasev.com](https://lab.maxbasev.com) - Production apps, experiments, and open-source
+- 🗒️ **Basev // Notes**: [en.skazoff.com](https://en.skazoff.com) - Field-tested notes on SaaS, web engineering, and crypto — mixed with reflective essays on films, books, anime, games, and philosophy. One feed, clear tags
 
 ### Features
 - **Responsive Design**: Optimized for all screen sizes (desktop, tablet, mobile)
@@ -16,10 +16,10 @@ This is a landing page for Max Basev that serves as a navigation hub to:
 ---
 
 ## Русский
-Это посадочная страница Max Basev, которая служит навигационным хабом к:
-- 👨‍💻 **Резюме**: [maxbasev.com](https://maxbasev.com) - Профессиональный опыт и навыки
-- 🚀 **Лаборатория**: [lab.maxbasev.com](https://lab.maxbasev.com) - Витрина проектов и экспериментов
-- 📝 **Basev // Notes**: [en.skazoff.com](https://en.skazoff.com) - SaaS, инди-проекты и фриланс-приключения. Мысли о кино, аниме, книгах, философии и всём что между
+Посадочная страница Max Basev — инди-разработчик, пишущий публично. Навигационный хаб к:
+- 👨‍💻 **Найм / Резюме**: [maxbasev.com](https://maxbasev.com) - Опыт, навыки и как я работаю с клиентами
+- 🚀 **Лаборатория / Проекты**: [lab.maxbasev.com](https://lab.maxbasev.com) - Продакшн-приложения, эксперименты и опенсорс
+- 🗒️ **Basev // Notes**: [en.skazoff.com](https://en.skazoff.com) - Проверенные на практике заметки о SaaS, веб-разработке и крипте — в сочетании с рефлексивными эссе о кино, книгах, аниме, играх и философии. Единая лента, чёткие теги
 
 ### Особенности
 - **Адаптивный дизайн**: Оптимизирован для всех размеров экрана
