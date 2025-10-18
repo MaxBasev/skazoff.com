@@ -1,12 +1,11 @@
 <!-- coding: utf-8 -->
-# SkazOff Blog Landing Page
+# Basev - Portfolio & Blog Landing Page
 
 ## English
-This is a landing page for skazoff.com that serves as a navigation hub between:
-- 🌍 **English Blog**: [en.skazoff.com](https://en.skazoff.com) - SaaS, Crypto, AI content
-- 🇷🇺 **Russian Blog**: [ru.skazoff.com](https://ru.skazoff.com) - Personal thoughts and random writings
+This is a landing page for Max Basev that serves as a navigation hub to:
 - 👨‍💻 **Resume**: [maxbasev.com](https://maxbasev.com) - Professional experience and skills
 - 🚀 **Lab**: [lab.maxbasev.com](https://lab.maxbasev.com) - Project showcase and experiments
+- 📝 **Basev // Notes**: [en.skazoff.com](https://en.skazoff.com) - SaaS, indie projects, and freelance adventures. Random thoughts on movies, anime, books, philosophy, and everything in between
 
 ### Features
 - **Responsive Design**: Optimized for all screen sizes (desktop, tablet, mobile)
@@ -17,11 +16,10 @@ This is a landing page for skazoff.com that serves as a navigation hub between:
 ---
 
 ## Русский
-Это посадочная страница для skazoff.com, которая служит навигационным хабом между:
-- 🌍 **Английский блог**: [en.skazoff.com](https://en.skazoff.com) - SaaS, Crypto, AI контент
-- 🇷🇺 **Русский блог**: [ru.skazoff.com](https://ru.skazoff.com) - Личные мысли и случайные записи
+Это посадочная страница Max Basev, которая служит навигационным хабом к:
 - 👨‍💻 **Резюме**: [maxbasev.com](https://maxbasev.com) - Профессиональный опыт и навыки
 - 🚀 **Лаборатория**: [lab.maxbasev.com](https://lab.maxbasev.com) - Витрина проектов и экспериментов
+- 📝 **Basev // Notes**: [en.skazoff.com](https://en.skazoff.com) - SaaS, инди-проекты и фриланс-приключения. Мысли о кино, аниме, книгах, философии и всём что между
 
 ### Особенности
 - **Адаптивный дизайн**: Оптимизирован для всех размеров экрана
@@ -40,9 +38,9 @@ This is a landing page for skazoff.com that serves as a navigation hub between:
 ## 📁 Project Structure | Структура проекта
 ```
 skazoff.com/
-├── index.html          # Main landing page
+├── index.html          # Main landing page (Basev)
 ├── css/
-│   └── style.css       # Optimized styles (180 lines)
+│   └── style.css       # Optimized styles (~230 lines)
 ├── img/
 │   ├── favicon.png     # Site favicon
 │   └── apple-touch-icon.png
@@ -50,17 +48,18 @@ skazoff.com/
 ```
 
 ## 🎨 Design Features | Особенности дизайна
-- **Color Scheme**: Purple gradient background with contrasting button colors
+- **Color Scheme**: Purple gradient background with blue portfolio buttons and purple blog button
 - **Typography**: System font stack for optimal performance
 - **Animations**: Smooth fade-in on load, scale effects on hover
 - **Responsive**: 4 breakpoints ensuring perfect display on all devices
-- **Performance**: Optimized CSS with minimal redundancy
+- **Structure**: Portfolio-first layout with blog section below
 
 ## 🚀 Performance | Производительность
 - **Lightweight**: No external dependencies
 - **Fast Loading**: System fonts, optimized CSS
 - **Mobile-First**: Responsive design with touch-friendly buttons
 - **SEO Optimized**: Proper meta tags and semantic HTML
+- **Clean Code**: Modular CSS with reusable button base class
 
 ## 📝 License | Лицензия
 [MIT](https://opensource.org/licenses/MIT)

@@ -33,7 +33,7 @@ body {
     width: 100%;
 }
 
-.portfolio-section {
+.blog-section {
     margin-top: 40px;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .subtitle,
-.portfolio-title {
+.blog-title {
     font-size: 20px;
     margin-bottom: 15px;
     color: #444;
@@ -91,12 +91,12 @@ body {
     box-sizing: border-box;
 }
 
-.language-button {
-    background-color: #5e2e90;
-}
-
 .portfolio-button {
     background-color: #2d5a87;
+}
+
+.blog-button {
+    background-color: #5e2e90;
 }
 
 .icon {
@@ -105,16 +105,16 @@ body {
 }
 
 /* Button hover effects */
-.language-button:hover {
-    transform: scale(1.05);
-    background-color: #7d4fd1;
-    box-shadow: 0 0 15px rgba(93, 48, 150, 0.4);
-}
-
 .portfolio-button:hover {
     transform: scale(1.05);
     background-color: #4a7ba7;
     box-shadow: 0 0 15px rgba(45, 90, 135, 0.4);
+}
+
+.blog-button:hover {
+    transform: scale(1.05);
+    background-color: #7d4fd1;
+    box-shadow: 0 0 15px rgba(93, 48, 150, 0.4);
 }
 
 .button-base:active {
@@ -131,7 +131,7 @@ body {
         font-size: 26px;
     }
     
-    .subtitle, .portfolio-title {
+    .subtitle, .blog-title {
         font-size: 19px;
     }
     
@@ -143,7 +143,7 @@ body {
         width: 85%;
     }
     
-    .portfolio-section {
+    .blog-section {
         margin-top: 35px;
     }
 }
@@ -157,7 +157,7 @@ body {
         font-size: 24px;
     }
     
-    .subtitle, .portfolio-title {
+    .subtitle, .blog-title {
         font-size: 18px;
         margin-bottom: 12px;
     }
@@ -182,7 +182,7 @@ body {
         margin: 15px auto;
     }
     
-    .portfolio-section {
+    .blog-section {
         margin-top: 30px;
     }
 }
@@ -196,7 +196,7 @@ body {
         font-size: 22px;
     }
     
-    .subtitle, .portfolio-title {
+    .subtitle, .blog-title {
         font-size: 16px;
         margin-bottom: 10px;
     }
@@ -226,7 +226,7 @@ body {
         margin: 12px auto;
     }
     
-    .portfolio-section {
+    .blog-section {
         margin-top: 25px;
     }
 }
