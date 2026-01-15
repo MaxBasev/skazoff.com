@@ -13,8 +13,13 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Layout containers */
@@ -29,8 +34,16 @@ body {
 .buttons-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 40px;
     width: 100%;
+}
+
+.link-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 6px;
 }
 
 .blog-section {
@@ -54,9 +67,10 @@ body {
 }
 
 .description {
-    font-size: 16px;
-    color: #555;
-    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+    opacity: 0.7;
+    margin-top: 0;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -126,23 +140,24 @@ body {
     .container {
         padding: 25px 15px;
     }
-    
+
     .welcome {
         font-size: 26px;
     }
-    
-    .subtitle, .blog-title {
+
+    .subtitle,
+    .blog-title {
         font-size: 19px;
     }
-    
+
     .buttons-container {
         gap: 20px;
     }
-    
+
     .button-base {
         width: 85%;
     }
-    
+
     .blog-section {
         margin-top: 35px;
     }
@@ -152,36 +167,37 @@ body {
     .container {
         padding: 20px 15px;
     }
-    
+
     .welcome {
         font-size: 24px;
     }
-    
-    .subtitle, .blog-title {
+
+    .subtitle,
+    .blog-title {
         font-size: 18px;
         margin-bottom: 12px;
     }
-    
+
     .buttons-container {
         gap: 18px;
     }
-    
+
     .button-base {
         padding: 14px 20px;
         font-size: 17px;
         width: 85%;
     }
-    
+
     .description {
-        font-size: 14px;
+        font-size: 13px;
         max-width: 90%;
-        margin-top: 6px;
+        margin-top: 0;
     }
-    
+
     .divider {
         margin: 15px auto;
     }
-    
+
     .blog-section {
         margin-top: 30px;
     }
@@ -191,41 +207,42 @@ body {
     .container {
         padding: 15px 10px;
     }
-    
+
     .welcome {
         font-size: 22px;
     }
-    
-    .subtitle, .blog-title {
+
+    .subtitle,
+    .blog-title {
         font-size: 16px;
         margin-bottom: 10px;
     }
-    
+
     .buttons-container {
         gap: 15px;
     }
-    
+
     .button-base {
         padding: 12px 12px;
         font-size: 16px;
         width: 90%;
     }
-    
+
     .icon {
         margin-right: 6px;
     }
-    
+
     .description {
-        font-size: 13px;
+        font-size: 12px;
         max-width: 95%;
-        margin-top: 5px;
+        margin-top: 0;
     }
-    
+
     .divider {
         width: 70%;
         margin: 12px auto;
     }
-    
+
     .blog-section {
         margin-top: 25px;
     }
